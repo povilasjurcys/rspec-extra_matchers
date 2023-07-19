@@ -4,7 +4,7 @@ require_relative "lib/rspec/extra_matchers/version"
 
 Gem::Specification.new do |spec|
   spec.name          = 'rspec-extra_matchers'
-  spec.version       = Rspec::ExtraMatchers::VERSION
+  spec.version       = RSpec::ExtraMatchers::VERSION
   spec.authors       = ['Povilas Jurcys']
   spec.email         = ['po.jurcys@gmail.com']
 
@@ -32,6 +32,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rspec'
   spec.add_development_dependency 'pry-byebug'
+  spec.add_development_dependency 'graphql'
+  spec.add_development_dependency 'graphql_rails'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-rspec'
 
